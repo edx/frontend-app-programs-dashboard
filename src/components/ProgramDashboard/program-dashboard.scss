@@ -1,0 +1,32 @@
+@import "~@edx/brand/paragon/variables";
+
+.program-dashboard {
+  .row {
+    justify-content: center;
+  }
+  .program-card {
+    .stretched-link:hover{
+      text-decoration: none;
+    }
+    .progress-dot {
+      border-radius: 10000px;
+      height: 2rem;
+      width: 2rem;
+      color: white;
+      text-align: center;
+      line-height: 31px;
+
+      &.not-started {
+        background-color: black;
+      }
+
+      &.completed {
+        background-color: $info;
+      }
+
+      &.in-progress {
+        background-color: $success;
+      }
+    }
+  }
+}
